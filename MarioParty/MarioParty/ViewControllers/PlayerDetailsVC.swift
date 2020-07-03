@@ -28,7 +28,7 @@ class PlayerDetailsVC: UIViewController {
     }
     
     @IBAction func randomizeStars(_ sender: Any) {
-        var stars = ["Star1", "Star2", "Star3", "Star4", "Star5"]
+        let stars = ["Star1", "Star2", "Star3", "Star4", "Star5"]
         let randomStar = stars.randomElement()!
         starsimageView.image = UIImage(named: randomStar)
     }
